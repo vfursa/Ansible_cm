@@ -1,0 +1,5 @@
+---
+- name: Download file
+  uri:
+    url: https://p-marsel.ru/images/tild3234-3132-4862-a132-623061383633__img_1142.jpg
+    dest: "{{ userdir }}" 
