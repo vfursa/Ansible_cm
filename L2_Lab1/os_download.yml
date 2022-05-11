@@ -1,0 +1,6 @@
+---
+- name: Download file
+  hosts: server
+  become: true
+  roles:
+    - role: os_download

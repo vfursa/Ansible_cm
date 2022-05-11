@@ -1,0 +1,12 @@
+---
+- name: Prepare user
+  hosts: server
+  become: true
+  roles:
+    - { role: os_prepare, tags: [prepare] }
+
+- name: Create catalog
+  hosts: server
+  become: true  
+  roles:
+    - role: dir_creating
